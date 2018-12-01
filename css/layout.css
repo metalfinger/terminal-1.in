@@ -358,8 +358,8 @@ div.cs-skin-slide::before {
 
 .cs-skin-slide.cs-active::before {
 	top: 185%;
-	-webkit-transform: scale3d(1,4.6,1);
-	transform: scale3d(1,4.6,1);
+	-webkit-transform: scale3d(1,4,1);
+	transform: scale3d(1,4,1);
 }
 
 .cs-skin-slide > span {
@@ -392,7 +392,7 @@ div.cs-skin-slide::before {
 .cs-skin-slide .cs-options {
 	background: transparent;
 	width: 70%;
-	height: 400%;
+	height: 333%;
 	top: 230%;
 	left: 50%;
 	-webkit-transform: translate3d(-50%,-50%,0);
@@ -4707,7 +4707,7 @@ div.cs-select {
 .project-box.width2 {
 	width: 100%;
 }
-}
+
 
 
 
