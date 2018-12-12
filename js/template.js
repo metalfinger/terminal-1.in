@@ -21,18 +21,30 @@
 				$(".logo").click(function(event, index) {
 					ascensor.trigger("scrollToStage", $(this).index());
 
+					$(".cs-select li").removeClass("selected");
+					$(".cs-select li").removeClass("cs-selected");
+
+					// $(".cs-select li").first().addClass("cs-selected");
+					$(".cs-placeholder").html("Home")
+
+					$(".cs-select li").first().addClass("selected");
+					$(".cs-select li").first().addClass("cs-selected");
+
+
+
+
+
+				// $(".cs-placeholder").html("HOME");
+
 				});
 
 				$(".cs-select li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
 
-				$(".logo:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+				// $(".logo:eq("+ "home" +")").addClass("selected");
 
 				ascensor.on("scrollStart", function(event, floor){
 					$(".cs-select li").removeClass("selected");
 					$(".cs-select li:eq("+floor.to+")").addClass("selected");
-
-					$(".logo").removeClass("selected");
-					$(".logo:eq("+floor.to+")").addClass("selected");
 				});
 
 				$(".up").click(function() {
