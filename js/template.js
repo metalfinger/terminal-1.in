@@ -7,7 +7,7 @@
 				var ascensor = $('#ascensorBuilding').ascensor({
 					keyNavigation: true,
 					loop: true,
-					time: 800,
+					time: 200,
 					easing: "easeInOutQuint",
 					direction: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5]],
 					ascensorFloorName:["home", "line-up", "faqs", "coc", "contact"]
@@ -18,11 +18,21 @@
 					ascensor.trigger("scrollToStage", $(this).index());
 				});
 
+				$(".logo").click(function(event, index) {
+					ascensor.trigger("scrollToStage", $(this).index());
+
+				});
+
 				$(".cs-select li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
+
+				$(".logo:eq("+ ascensor.data("current-floor") +")").addClass("selected");
 
 				ascensor.on("scrollStart", function(event, floor){
 					$(".cs-select li").removeClass("selected");
 					$(".cs-select li:eq("+floor.to+")").addClass("selected");
+
+					$(".logo").removeClass("selected");
+					$(".logo:eq("+floor.to+")").addClass("selected");
 				});
 
 				$(".up").click(function() {
@@ -40,6 +50,8 @@
 				$(".right").click(function() {
 					ascensor.trigger("scrollToDirection" ,"right");
 				});
+
+
 		});
 
 

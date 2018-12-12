@@ -27,6 +27,7 @@
 	<link rel="stylesheet" href="css/colorbox.css"/>
 	<link rel="stylesheet" href="css/settings.css"/>
 	<link rel="stylesheet" href="css/retina.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 
 	<!-- Favicons
@@ -37,7 +38,11 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
 
 </head>
-<body class="royal_loader">
+<body class="royal_loader" style="
+	background-image: url('images/resources/back.png');
+	background-repeat: repeat; width: 100%; height: 100%;
+
+">
 
 
 
@@ -52,10 +57,16 @@
 		<div class="container">
 			<div class="sixteen columns">
 
-				<div class="logo"></div>
+				<a><div class="logo">
+
+					<!-- <select class="cs-select cs-skin-slide">
+						<option value="Home">Home</option>
+					</select> -->
+				</div></a>
+
 
 				<select class="cs-select cs-skin-slide">
-					<option value="Home">Home</option>
+					<option value="Home">Home             </option>
 					<option value="Line Up">Line Up</option>
 					<!-- <option value="Tickets">Tickets</option> -->
 					<option value="FAQs">FAQs</option>
@@ -81,11 +92,11 @@
 				<div class="social-top">
 					<ul class="list-social">
 						<li class="icon-soc tipped" data-title="Facebook"  data-tipper-options='{"direction":"top","follow":"true"}'>
-							<a href="artist-1.html" > <img src="images/sm/fb.png"></img> </a>
+							<a href="https://www.facebook.com/milkmankind/"  target="_blank" > <img src="images/sm/fb.png"></img> </a>
 						</li>
 						<li class="icon-soc tipped" data-title="Instagram"  data-tipper-options='{"direction":"top","follow":"true"}'>
 
-							<a href="artist-1.html" > <img src="images/sm/ig.png"></img> </a>
+							<a href="https://www.instagram.com/milk_mankind/" target="_blank"> <img src="images/sm/ig.png"></img> </a>
 
 						</li>
 
@@ -94,110 +105,54 @@
 
 				<div class="tp-banner-container">
 					<div class="tp-banner" >
-						<ul>
-							<!-- THE FIRST SLIDE -->
 
-							<!-- <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-title="lorem ipsum">
-								<img src="images/1.jpg" alt=""  data-bgposition="center center"/>
+						<audio controls autoplay loop>
+						  <source src="music.mp3" type="audio/mpeg">
 
-								<!-- THE CAPTIONS IN THIS SLIDE -->
+						</audio>
 
-								<div class="caption big-text lft ltt"
-										data-x="center"
-										data-y="center"
-										data-speed="700"
-										data-start="600"
-										data-easing="easeOutExpo" style="z-index: 200;">
-									<div class="big-text"><span>lorem ipsum</span></div>
-								</div>
-								<div class="caption big-text lft ltt"
-										data-x="center"
-										data-y="center"
-										data-speed="700"
-										data-start="1000"
-										data-easing="easeOutExpo" style="z-index: 200;">
-									<div class="thin-text"><span>driven by <em>passion</em></span></div>
-								</div>
+						<div class="video-container" style="position: absolute;
+					  top: 0;
+					  bottom: 0;
+					  width: 100%;
+					  height: 100%;
+					  overflow: hidden;">
+  						<video class="videotag" src="video/home.mov"  Autoplay=autoplay muted loop style="/* Make video to at least 100% wide and tall */
+						  min-width: 100%;
+						  min-height: 100%;
 
-							</li>
+						  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+						  width: auto;
+						  height: auto;
 
-							<!-- THE SECOND SLIDE -->
+						  /* Center the video */
+						  position: absolute;
+						  top: 50%;
+						  left: 50%;
+						  transform: translate(-50%,-50%);"></video>
+						</div>
 
-							<!-- <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-title="milkman showcase">
-								<img src="images/1a.jpg" alt=""  data-bgposition="center center"/>
-
-								<!-- THE CAPTIONS IN THIS SLIDE -->
-
-								<div class="caption big-text lft ltt"
-										data-x="center"
-										data-y="center"
-										data-speed="700"
-										data-start="600"
-										data-easing="easeOutExpo" style="z-index: 200;">
-										<div class="big-text"><span>milkman showcase</span></div>
-								</div>
-								<div class="caption big-text lft ltt"
-										data-x="center"
-										data-y="center"
-										data-speed="700"
-										data-start="1000"
-										data-easing="easeOutExpo" style="z-index: 200;">
-									<div class="thin-text"><span>we <em>love</em> what we do</span></div>
-								</div>
-
-							</li>
-
-							<!-- THE THIRD SLIDE -->
-
-							<!-- <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-title="Kadak line up">
-								<img src="images/1b.jpg" alt=""  data-bgposition="center center" />
-
-								<!-- THE CAPTIONS IN THIS SLIDE -->
-								<div class="tp-caption tp-fade fadeout fullscreenvideo"
-									data-x="0"
-									data-y="0"
-									data-speed="1000"
-									data-start="1100"
-									data-easing="Power4.easeOut"
-									data-elementdelay="0.01"
-									data-endelementdelay="0.1"
-									data-endspeed="1500"
-									data-endeasing="Power4.easeIn"
-									data-autoplay="true"
-									data-autoplayonlyfirsttime="false"
-									data-nextslideatend="true"
-									data-volume="mute" data-forceCover="1"
-									data-aspectratio="16:9" data-forcerewind="on"
-									style="z-index: 2;">
-									<video class="" preload="none" poster='images/1b.jpg'>
-										<source src="videos/video.mp4" type="video/mp4">
-										<source src="videos/video.webm" type="video/webm">
-										<source src="videos/video.ogg" type="video/ogg">
-									</video>
-								</div>
-
-								<div class="layer-over-video"></div>
-
-								<div class="caption big-text lft ltt"
-										data-x="center"
-										data-y="center"
-										data-speed="700"
-										data-start="600"
-										data-easing="easeOutExpo" style="z-index: 200;">
-										<div class="big-text"><span>KADAK LINE UP</span></div>
-								</div>
-								<div class="caption big-text lft ltt"
-										data-x="center"
-										data-y="center"
-										data-speed="700"
-										data-start="1000"
-										data-easing="easeOutExpo" style="z-index: 200;">
-									<div class="thin-text"><span>thae best <em>from the country</em></span></div>
-								</div>
-
-							</li>
-						</ul>
 					</div>
+
+
+					<img src="images/milkmanlogo.png" alt="" style="/* Make video to at least 100% wide and tall */
+
+
+					/* Setting width & height to auto prevents the browser from stretching or squishing the video */
+					width: auto;
+					height: auto;
+
+					/* Center the video */
+					position: absolute;
+					top: 99%;
+					left: 100%;
+					transform: translate(-100%,-100%);" />
+
+				<div>
+
+					<h2>18/19 Jan / 2019 </br> </br> famous studios / bombay</h2>
+				</div>
+
 				</div>
 			</div>
 		</div>
@@ -206,34 +161,52 @@
 		<!-- Line Up 1 Content ================= -->
 
 		<div>
-			<div class="content-section">
+			<div class="content-section" style="background-image: url('images/resources/back.png');
+		  background-repeat: repeat;">
 
-				<div class="head-content-wrap head-content-wrap-image-services">
+				<!-- <div class="head-content-wrap head-content-wrap-image-services">
 					<div class="container">
-						<div class="sixteen columns">
-							<!-- <h5><span>line up</span></h5> -->
+						<div class="sixteen columns" >
+
 						</div>
 					</div>
-
-					<!--div class="head-content-dark-wrap">
-						<div class="container">
-							<div class="sixteen columns">
-								<p>We tackle business problems with intelligence.</p>
-							</div>
-						</div>
-					</div-->
-				</div>
+				</div> -->
 
 				<div class="container">
 					<div class="sixteen columns">
-						<h5 style="padding-top: 30px;">line up Option 1</h5>
+						<h5 style="padding-top: 110px; color: white">Line Up</h5>
 						<div class="line-text"></div>
-						<div class="subtext-content">Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .</div>
+						<!-- <div class="subtext-content">Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .</div> -->
 					</div>
 
-					<div class="eight columns">
-					  <div class="what-we-do-wrap"-->
-					    <!--div class="icon-top pe-7s-pen"></div-->
+					<div class="" style="width: 100vw; height:100vh">
+
+
+
+						<h3 src="images/milkmanlogo.png" alt="" style="/* Make video to at least 100% wide and tall */
+
+
+						/* Setting width & height to auto prevents the browser from stretching or squishing the video */
+						width: auto;
+						height: auto;
+
+						/* Center the video */
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%,-50%);
+						color: #fc3300;
+						font-size: 80px;
+						line-height: 1;
+						" />
+						coming soon
+					</h3>
+
+					</div>
+
+					<!-- <div class="eight columns">
+					  <div class="what-we-do-wrap">
+
 					    <img src="images/artist1.jpg" alt="" class="center !important" />
 					    <h6>Artist Name11</h6>
 							<h1 style="padding-bottom:20px;">
@@ -243,13 +216,13 @@
 							</h1>
 					    <p>Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .</p>
 							<a class="iframe group1" href="artist-1.html" ><div class="subtext-more">read more</div></a>
-					    <!--a class="iframe group1" href="services-more-1.html" ><div class="plus-more pe-7s-plus"></div></a-->
+
 					  </div>
 					</div>
 
 					<div class="eight columns">
-					  <div class="what-we-do-wrap"-->
-					    <!--div class="icon-top pe-7s-pen"></div-->
+					  <div class="what-we-do-wrap">
+
 					    <img src="images/artist1.jpg" alt="" class="center !important" />
 					    <h6>Artist Name11</h6>
 							<h1 style="padding-bottom:20px;">
@@ -259,15 +232,15 @@
 							</h1>
 					    <p>Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .</p>
 							<a class="iframe group1" href="artist-1.html" ><div class="subtext-more">read more</div></a>
-					    <!--a class="iframe group1" href="services-more-1.html" ><div class="plus-more pe-7s-plus"></div></a-->
+
 					  </div>
 					</div>
 
 					<div class="clear"></div>
 
 					<div class="eight columns">
-					  <div class="what-we-do-wrap"-->
-					    <!--div class="icon-top pe-7s-pen"></div-->
+					  <div class="what-we-do-wrap">
+
 					    <img src="images/artist1.jpg" alt="" class="center !important" />
 					    <h6>Artist Name11</h6>
 							<h1 style="padding-bottom:20px;">
@@ -277,13 +250,13 @@
 							</h1>
 					    <p>Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .</p>
 							<a class="iframe group1" href="artist-1.html" ><div class="subtext-more">read more</div></a>
-					    <!--a class="iframe group1" href="services-more-1.html" ><div class="plus-more pe-7s-plus"></div></a-->
+
 					  </div>
 					</div>
 
 					<div class="eight columns">
-					  <div class="what-we-do-wrap"-->
-					    <!--div class="icon-top pe-7s-pen"></div-->
+					  <div class="what-we-do-wrap">
+
 					    <img src="images/artist1.jpg" alt="" class="center !important" />
 					    <h6>Artist Name11</h6>
 							<h1 style="padding-bottom:20px;">
@@ -293,9 +266,9 @@
 							</h1>
 					    <p>Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .</p>
 							<a class="iframe group1" href="artist-1.html" ><div class="subtext-more">read more</div></a>
-					    <!--a class="iframe group1" href="services-more-1.html" ><div class="plus-more pe-7s-plus"></div></a-->
+
 					  </div>
-					</div>
+					</div> -->
 
 				</div>
 
@@ -369,23 +342,14 @@
 				</div> -->
 
 			</div>
-			<div class="footer-wrap">
+			<!-- <div class="footer-wrap" style="width: 100vw; height:20vh">
 
 				<div class="container">
 					<div class="sixteen columns">
 						<img src="images/footer-logo.png" alt="" />
 					</div>
 				</div>
-				<div class="footer-social">
-					<div class="container">
-						<div class="sixteen columns">
-							<a href="#" data-dummy="twitter">twitter</a>
-							<a href="#" data-dummy="github">github</a>
-							<a href="#" data-dummy="facebook">facebook</a>
-							<a href="#" data-dummy="google +">google +</a>
-						</div>
-					</div>
-				</div>
+
 				<div class="footer-credit">
 					<div class="container">
 						<div class="sixteen columns">
@@ -393,7 +357,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 
@@ -511,14 +475,21 @@
 		<!-- FAQs Content ================= -->
 
 		<div>
-			<div class="content-section">
+			<div class="content-section" style="background-image: url('images/resources/back.png');
+		  background-repeat: repeat;">
 
-				<div class="head-content-wrap head-content-wrap-image-blog">
+				<!-- <div class="head-content-wrap head-content-wrap-image-blog">
 					<div class="container">
 						<div class="sixteen columns">
 						</div>
 					</div>
 
+				</div> -->
+
+				<div class="sixteen columns">
+					<h5 style="padding-top: 100px; color: white">FAQs</h5>
+					<div class="line-text"></div>
+					<!-- <div class="subtext-content">Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .</div> -->
 				</div>
 
 				<!-- Hiren Code Starts -->
@@ -538,7 +509,7 @@
 									<h6>list style:</h6>
 								<ul>
 									<li><span>&#xe685;</span> Quisque rutrum.</li>
-									<li><span>&#xe616;</span> Fringilla vel, aliquet nec.</li>
+									<li><span>-</span> Fringilla vel, aliquet nec.</li>
 									<li><span>&#xe61c;</span> Ligula leo, porttitor eu.</li>
 									<li><span>&#xe624;</span> Aenean imperdiet.</li>
 									<li><span>&#xe62f;</span> Nulla consequat massa.</li>
@@ -600,23 +571,14 @@
 
 
 			</div>
-			<div class="footer-wrap">
+			<!-- <div class="footer-wrap">
 
 				<div class="container">
 					<div class="sixteen columns">
 						<img src="images/footer-logo.png" alt="" />
 					</div>
 				</div>
-				<div class="footer-social">
-					<div class="container">
-						<div class="sixteen columns">
-							<a href="#" data-dummy="twitter">twitter</a>
-							<a href="#" data-dummy="github">github</a>
-							<a href="#" data-dummy="facebook">facebook</a>
-							<a href="#" data-dummy="google +">google +</a>
-						</div>
-					</div>
-				</div>
+
 				<div class="footer-credit">
 					<div class="container">
 						<div class="sixteen columns">
@@ -624,16 +586,26 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<!-- COC Content ================= -->
 
 		<div>
-			<div class="content-section">
+			<div class="content-section" style="
+				background-image: url('images/resources/back.png');
+				background-repeat: repeat; width: 100%; height: 100%;
 
-				<div class="head-content-wrap head-content-wrap-image-about">
+			">
 
+				<!-- <div class="head-content-wrap head-content-wrap-image-about">
+
+				</div> -->
+
+				<div class="sixteen columns">
+					<h5 style="padding-top: 100px; color: white">Code of conduct</h5>
+					<div class="line-text"></div>
+					<!-- <div class="subtext-content">Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .</div> -->
 				</div>
 
 				<!-- Hiren Code Starts -->
@@ -644,18 +616,18 @@
 						<div class="sixteen columns">
 
 							<div class="post-content">
-								<h5>Code of Conduct</h5>
+								<!-- <h5>Code of Conduct</h5> -->
 								<p>Terminal 1 is a festival of music and creativity, and we exist to help the industry be the best it can be. </p>
 								<p class="text-border-left">However, the festival is not a place for inappropriate, disruptive, or abusive behaviour, either in person or online. This could include:</p>
 								<br />
 								<div class="list-in-blog-content">
 									<!-- <h6>list style:</h6> -->
 								<ul>
-									<li><span>&#xe685;</span> Offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, race, ethnicity, or religion</li>
-									<li><span>&#xe616;</span> Deliberate intimidation</li>
-									<li><span>&#xe61c;</span> Harassing photography</li>
-									<li><span>&#xe624;</span> Sustained disruption of talks or other events</li>
-									<li><span>&#xe62f;</span> Inappropriate physical contact</li>
+									<li><span>-</span> Offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, race, ethnicity, or religion</li>
+									<li><span>-</span> Deliberate intimidation</li>
+									<li><span>-</span> Harassing photography</li>
+									<li><span>-</span> Sustained disruption of talks or other events</li>
+									<li><span>-</span> Inappropriate physical contact</li>
 								</ul>
 								</div>
 								<p>Terminal 1 may act if it feels any individual or group has failed to meet the standards set by this Code of Conduct, including but not limited to revoking the individual or groups Festival passes without refund.</p>
@@ -675,23 +647,14 @@
 				<!-- Hiren Code Ends -->
 
 			</div>
-			<div class="footer-wrap">
+			<!-- <div class="footer-wrap">
 
 				<div class="container">
 					<div class="sixteen columns">
 						<img src="images/footer-logo.png" alt="" />
 					</div>
 				</div>
-				<div class="footer-social">
-					<div class="container">
-						<div class="sixteen columns">
-							<a href="#" data-dummy="twitter">twitter</a>
-							<a href="#" data-dummy="github">github</a>
-							<a href="#" data-dummy="facebook">facebook</a>
-							<a href="#" data-dummy="google +">google +</a>
-						</div>
-					</div>
-				</div>
+
 				<div class="footer-credit">
 					<div class="container">
 						<div class="sixteen columns">
@@ -699,46 +662,59 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 		</div>
 
 		<!-- Contact Content ================= -->
 
 		<div>
-			<div class="content-section">
+			<div class="content-section"  style="background-image: url('images/resources/back.png');
+		  background-repeat: repeat;">
 
-				<div class="head-content-wrap head-content-wrap-image-contact">
+				<!-- <div class="head-content-wrap head-content-wrap-image-contact">
 
 
+				</div> -->
+
+				<div class="sixteen columns">
+					<h5 style="padding-top: 100px; color: white">Contact</h5>
+					<div class="line-text"></div>
+					<!-- <div class="subtext-content">Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .</div> -->
 				</div>
 
 
 				<div class="clear"></div>
+				<div style="-webkit-filter: grayscale(100%); filter: grayscale(100%);">
+				<iframe style="height: 500px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.7325765895043!2d72.82176051513753!3d18.987414259684545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce8a7380159b%3A0xf45783b8976bdcb6!2sFamous+Studios+Ltd.!5e0!3m2!1sen!2sin!4v1544600338365" width="600" height="900" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
 
-				<a class="button-map close-map">
+				<!-- <a class="button-map close-map">
 					<div class="google-image"></div>
 					<div class="google-mask"></div>
 					<span>Locate Us on Map</span>
 				</a>
-				<div id="google_map"></div>
+				<div id="google_map"></div> -->
 
 				<div class="clear"></div>
 
 				<div class="contact-details">
 					<div class="container">
-						<div class="one-third column">
+						<!-- <div class="one-third column">
 							<h6>OFFICE</h6>
 							<p>805, Sun aspire, andheri west</p>
 						</div>
 						<div class="one-third column">
 							<h6>PHONE</h6>
 							<p>+91 9900990093</p>
-						</div>
-						<div class="one-third column">
-							<h6>EMAIL</h6>
-							<p>hi@milkman.COM</p>
-						</div>
+						</div> -->
+
+						<div class="sixteen columns">
+							<h5 style="padding-top: 50px; color: white">EMAIL</h5>
+							<div class="line-text"></div>
+							<p style="color: #cccccc">info@milkmankind.com</p>
+							<!-- <div class="subtext-content">Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .Short Detail About Artist. Lorem Ipsum Lorem Ipsum Lorem Ipsum .</div> -->
+
 					</div>
 				</div>
 
@@ -750,7 +726,7 @@
 						<img src="images/footer-logo.png" alt="" />
 					</div>
 				</div>
-				<div class="footer-social">
+				<!-- <div class="footer-social">
 					<div class="container">
 						<div class="sixteen columns">
 							<a href="#" data-dummy="twitter">twitter</a>
@@ -759,7 +735,7 @@
 							<a href="#" data-dummy="google +">google +</a>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="footer-credit">
 					<div class="container">
 						<div class="sixteen columns">
