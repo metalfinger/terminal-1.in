@@ -117,7 +117,7 @@
 					  width: 100%;
 					  height: 100%;
 					  overflow: hidden;">
-  						<video class="videotag" src="video/home_final.webm" type="video/webm"  Autoplay=autoplay muted loop style="/* Make video to at least 100% wide and tall */
+  						<video preload="auto" autoplay loop muted style="/* Make video to at least 100% wide and tall */
 						  min-width: 100%;
 						  min-height: 100%;
 
@@ -129,7 +129,9 @@
 						  position: absolute;
 						  top: 50%;
 						  left: 50%;
-						  transform: translate(-50%,-50%);"></video>
+						  transform: translate(-50%,-50%);">
+								<source src="video/home_final.webm" type="video/webm"/>
+							</video>
 						</div>
 
 					</div>
