@@ -80,7 +80,7 @@ span.hei-text-pink,
 .leave-reply input:focus,
 .leave-reply textarea:active,
 .leave-reply textarea:focus {
-	background: #005aff;
+	background: #fc3300;
 }
 #sync2 .synced .item {
 	border-color: #005aff;
