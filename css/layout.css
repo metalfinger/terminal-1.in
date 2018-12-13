@@ -4543,7 +4543,7 @@ audio{
 	border:0 solid transparent;
 }
 .social-top{
-	margin-top:70px;
+	/* margin-top:70px; */
 }
 
 
@@ -4576,9 +4576,9 @@ audio{
 	float:none;
 	margin-top:0;
 	margin:0 auto;
-	width:100px;
+	/* width:100px;
 	height:30px;
-	background-size:100px 30px;
+	background-size:100px 30px; */
 }
 div.cs-skin-slide {
 	font-size: 14px;
