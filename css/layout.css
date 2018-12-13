@@ -200,8 +200,11 @@ body.royal_loader {
 /* #PAGE STYLES */
 
 .top-bar{
+  margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10px;
 	position: absolute;
-	width: 100%;
+	width: 90%;
 	z-index: 1000;
 	top:0;
 	left:0;
@@ -4800,6 +4803,8 @@ div.cs-select {
   background-image: url("images/resources/back.png");
   background-repeat: repeat;
 }
+
+/* // Navigation Variables */
 
 
 

@@ -1,6 +1,9 @@
 (function($) { "use strict";
 
 
+
+
+
 	//Page transitions
 
 		$(function(){"use strict";
@@ -14,8 +17,57 @@
 				});
 				var floorAdded = false;
 
-				$(".cs-select li").click(function(event, index) {
+				// $(".cs-select li").click(function(event, index) {
+				// 	ascensor.trigger("scrollToStage", $(this).index());
+				// });
+
+
+
+				$(".nav-title").click(function(event) {
+
 					ascensor.trigger("scrollToStage", $(this).index());
+					console.log($(this).index());
+					 console.log("sdf");
+
+
+					var cb = $('#nav-check');
+
+					cb.prop('checked', false);
+
+					// console.log(cb.prop('checked') + "sdf");
+					//
+					// console.log("sdf");
+
+
+					// console.log(input.prop('checked'));
+				  // if(input.prop('checked')){
+				  //   input.prop('checked',false);
+				  // }else{
+				  //   input.prop('checked',true);
+				  // }
+				});
+
+				$(".nav-links a").click(function(event, index) {
+					ascensor.trigger("scrollToStage", $(this).index());
+					console.log($(this).index());
+					// console.log("sdf");
+
+
+					var cb = $('#nav-check');
+
+					cb.prop('checked', false);
+
+					// console.log(cb.prop('checked') + "sdf");
+					//
+					// console.log("sdf");
+
+
+					// console.log(input.prop('checked'));
+				  // if(input.prop('checked')){
+				  //   input.prop('checked',false);
+				  // }else{
+				  //   input.prop('checked',true);
+				  // }
 				});
 
 				$(".logo").click(function(event, index) {
@@ -30,19 +82,20 @@
 					$(".cs-select li").first().addClass("selected");
 					$(".cs-select li").first().addClass("cs-selected");
 
-
-
-
-
-				// $(".cs-placeholder").html("HOME");
-
 				});
 
 				$(".cs-select li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
 
 				ascensor.on("scrollStart", function(event, floor){
-					$(".cs-select li").removeClass("selected");
-					$(".cs-select li:eq("+floor.to+")").addClass("selected");
+
+					console.log(floor.to);
+
+					$(".nav-links a").removeClass("nav-selected");
+					$(".nav-links a:eq("+floor.to+")").addClass("nav-selected");
+
+					// $(".cs-select li").removeClass("selected");
+					// $(".cs-select li:eq("+floor.to+")").addClass("selected");
+
 				});
 
 				$(".up").click(function() {
