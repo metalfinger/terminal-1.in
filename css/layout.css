@@ -200,11 +200,8 @@ body.royal_loader {
 /* #PAGE STYLES */
 
 .top-bar{
-  margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 10px;
 	position: absolute;
-	width: 90%;
+	width: 100%;
 	z-index: 1000;
 	top:0;
 	left:0;

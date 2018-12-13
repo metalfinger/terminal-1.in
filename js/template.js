@@ -25,8 +25,8 @@
 
 				$(".nav-title").click(function(event) {
 
-					ascensor.trigger("scrollToStage", $(this).index());
-					console.log($(this).index());
+					ascensor.trigger("scrollToStage", 0);
+					console.log(0);
 					 console.log("sdf");
 
 
@@ -48,8 +48,8 @@
 				});
 
 				$(".nav-links a").click(function(event, index) {
-					ascensor.trigger("scrollToStage", $(this).index());
-					console.log($(this).index());
+					ascensor.trigger("scrollToStage", $(this).index()-1);
+					console.log($(this).index()-1);
 					// console.log("sdf");
 
 
@@ -88,10 +88,14 @@
 
 				ascensor.on("scrollStart", function(event, floor){
 
-					console.log(floor.to);
+
+
+					var newfloor = floor.to+1
+
+					console.log(floor.to+"asdf");
 
 					$(".nav-links a").removeClass("nav-selected");
-					$(".nav-links a:eq("+floor.to+")").addClass("nav-selected");
+					$(".nav-links a:eq("+newfloor+")").addClass("nav-selected");
 
 					// $(".cs-select li").removeClass("selected");
 					// $(".cs-select li:eq("+floor.to+")").addClass("selected");
