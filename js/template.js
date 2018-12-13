@@ -10,12 +10,32 @@
 					time: 800,
 					easing: "easeInOutQuint",
 					direction: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5]],
-					ascensorFloorName:["home", "about-content", "services-content", "work-content", "blog-content", "contact-content"]
+					ascensorFloorName:["home", "line-up", "faqs", "coc", "contact"]
 				});
 				var floorAdded = false;
 
 				$(".cs-select li").click(function(event, index) {
 					ascensor.trigger("scrollToStage", $(this).index());
+				});
+
+				$(".logo").click(function(event, index) {
+					ascensor.trigger("scrollToStage", $(this).index());
+
+					$(".cs-select li").removeClass("selected");
+					$(".cs-select li").removeClass("cs-selected");
+
+					// $(".cs-select li").first().addClass("cs-selected");
+					$(".cs-placeholder").html("Home")
+
+					$(".cs-select li").first().addClass("selected");
+					$(".cs-select li").first().addClass("cs-selected");
+
+
+
+
+
+				// $(".cs-placeholder").html("HOME");
+
 				});
 
 				$(".cs-select li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
