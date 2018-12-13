@@ -2933,7 +2933,7 @@ iframe{
 
 .post-content{
 	position:relative;
-	background:#fff;
+	/* background:#fff; */
 	width:calc(100% - 60px);
 	padding:30px;
 	margin-bottom:20px;
@@ -2950,6 +2950,7 @@ iframe{
 }
 .post-content p{
 	text-align:left;
+  color: #fc3300;
 }
 p.text-border-left{
 	margin-top:30px;
@@ -2987,6 +2988,7 @@ p.text-border-left{
 	padding-bottom:10px;
 	font-weight:300;
 	list-style: none;
+  color: #fc3300;
 }
 .list-in-blog-content li span{
 	font-family: 'Greenscr';

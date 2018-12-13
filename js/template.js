@@ -7,10 +7,10 @@
 				var ascensor = $('#ascensorBuilding').ascensor({
 					keyNavigation: true,
 					loop: true,
-					time: 200,
+					time: 800,
 					easing: "easeInOutQuint",
 					direction: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5]],
-					ascensorFloorName:["home", "line-up", "faqs", "coc", "contact"]
+					ascensorFloorName:["home", "about-content", "services-content", "work-content", "blog-content", "contact-content"]
 				});
 				var floorAdded = false;
 
@@ -18,29 +18,7 @@
 					ascensor.trigger("scrollToStage", $(this).index());
 				});
 
-				$(".logo").click(function(event, index) {
-					ascensor.trigger("scrollToStage", $(this).index());
-
-					$(".cs-select li").removeClass("selected");
-					$(".cs-select li").removeClass("cs-selected");
-
-					// $(".cs-select li").first().addClass("cs-selected");
-					$(".cs-placeholder").html("Home")
-
-					$(".cs-select li").first().addClass("selected");
-					$(".cs-select li").first().addClass("cs-selected");
-
-
-
-
-
-				// $(".cs-placeholder").html("HOME");
-
-				});
-
 				$(".cs-select li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
-
-				// $(".logo:eq("+ "home" +")").addClass("selected");
 
 				ascensor.on("scrollStart", function(event, floor){
 					$(".cs-select li").removeClass("selected");
@@ -62,8 +40,6 @@
 				$(".right").click(function() {
 					ascensor.trigger("scrollToDirection" ,"right");
 				});
-
-
 		});
 
 
@@ -76,6 +52,7 @@
 			$('.fulscreen-section').css({'height':($(window).height())+'px'});
 			$(window).resize(function(){
 			$('.fulscreen-section').css({'height':($(window).height())+'px'});
+			console.log("sdf")
 			});
 		});
 
