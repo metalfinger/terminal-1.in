@@ -2955,7 +2955,7 @@ iframe{
 p.text-border-left{
 	margin-top:30px;
 	margin-bottom:30px;
-	margin-left:40px;
+	/* margin-left:40px; */
 	padding-left:20px;
 }
 .post-content pre{
@@ -2980,6 +2980,7 @@ p.text-border-left{
 	padding-bottom:20px;
 }
 .list-in-blog-content li{
+  /* list-style-type: disc; */
 	text-align:left;
 	font-family: 'Greenscr';
 	font-size: 13px;
@@ -2990,6 +2991,7 @@ p.text-border-left{
 	list-style: none;
   color: #fc3300;
 }
+
 .list-in-blog-content li span{
 	font-family: 'Greenscr';
 	display:inline-block;

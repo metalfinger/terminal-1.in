@@ -22,6 +22,14 @@
 	#Misc */
 
 
+	li:before {
+	    content: "--  ";
+	    color: #0053ff; /* or whatever color you prefer */
+	}
+
+
+
+
 
 .nav-selected{
 	color: red !important;
