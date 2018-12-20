@@ -63,7 +63,7 @@
 			// });
 
 			// console.log(nextImage);
-		}, 100);
+		}, 25);
 
 
 
