@@ -27,9 +27,13 @@
 		var myAnim = setInterval(function(){
 
 			var x = document.getElementById("myImg").complete;
-			console.log(x);
+
 			if (x) {
-				tester = true;
+				if(!tester){
+					tester = true;
+					console.log(x);
+				}
+
 			}
 
 			if(tester)
