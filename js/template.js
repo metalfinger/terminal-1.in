@@ -27,24 +27,39 @@
 //    }
 // });
 
-		var img_counter = 35;
-		var img_max_counter = 484;
+		var img_counter = 1;
+		var img_max_counter = 89;
+
+		var direction = 0; // 0 is upwords and 1 is downwords
 
 		var myAnim = setInterval(function(){
-			img_counter++;
 
-			if(img_counter > img_max_counter)
+			if(direction == 0)
 			{
-				img_counter = 35;
+				img_counter++;
+
+				if(img_counter == img_max_counter)
+				{
+					direction = 1
+				}
 			}
+			else {
+				img_counter--;
+
+				if(img_counter == 0)
+				{
+					direction = 0
+				}
+			}
+
 			var counter_string = String(img_counter);
 
-			if(img_counter < 100)
+			if(img_counter < 10)
 			{
 				counter_string = "0"+counter_string;
 			}
 
-			var nextImage =	"img_seq/wave-event-size_00"+counter_string+".png"
+			var nextImage =	"img_seq/sphere-wave_000"+counter_string+".png"
 
 			$(".myImageHolder").attr('src', nextImage);
 
