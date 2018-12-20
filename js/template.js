@@ -22,11 +22,21 @@
 
 		var direction = 0; // 0 is upwords and 1 is downwords
 
+		var tester = false;
+
 		var myAnim = setInterval(function(){
 
 			var x = document.getElementById("myImg").complete;
 			console.log(x);
 			if (x) {
+				tester = true;
+			}
+
+			if(tester)
+			{
+
+
+
 
 						if(direction == 0)
 						{
