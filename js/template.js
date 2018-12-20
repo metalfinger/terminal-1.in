@@ -1,7 +1,19 @@
 
 
-
 (function($) { "use strict";
+
+		$(window).load(function() {
+				console.log("LOADED");
+
+
+
+
+
+
+		})
+
+
+
 
 
 
@@ -12,37 +24,49 @@
 
 		var myAnim = setInterval(function(){
 
-			if(direction == 0)
-			{
-				img_counter++;
+			var x = document.getElementById("myImg").complete;
+			console.log(x);
+			if (x) {
 
-				if(img_counter == img_max_counter)
-				{
-					direction = 1
-				}
+						if(direction == 0)
+						{
+							img_counter++;
+
+							if(img_counter == img_max_counter)
+							{
+								direction = 1
+							}
+						}
+						else {
+							img_counter--;
+
+							if(img_counter == 1)
+							{
+								direction = 0
+							}
+						}
+
+						var counter_string = String(img_counter);
+
+						if(img_counter < 10)
+						{
+							counter_string = "0"+counter_string;
+						}
+
+						var nextImage =	"img_seq/sphere-wave_000"+counter_string+".png?" + (new Date).getTime();
+
+						$(".myImageHolder").attr('src', nextImage);
 			}
-			else {
-				img_counter--;
 
-				if(img_counter == 1)
-				{
-					direction = 0
-				}
-			}
+			// $('img.myImageHolder').on('load',function(){
+			// 	 console.log("ASdfasdfasdfa");
+			// });
 
-			var counter_string = String(img_counter);
-
-			if(img_counter < 10)
-			{
-				counter_string = "0"+counter_string;
-			}
-
-			var nextImage =	"img_seq/sphere-wave_000"+counter_string+".png?" + (new Date).getTime();
-
-			$(".myImageHolder").attr('src', nextImage);
-
-			console.log(nextImage);
+			// console.log(nextImage);
 		}, 100);
+
+
+
 
 
 
@@ -172,7 +196,7 @@
 			$('.fulscreen-section').css({'height':($(window).height())+'px'});
 			$(window).resize(function(){
 			$('.fulscreen-section').css({'height':($(window).height())+'px'});
-			console.log("sdf")
+			// console.log("sdf")
 			});
 		});
 
