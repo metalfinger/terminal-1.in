@@ -5,28 +5,6 @@
 
 
 
-// var imagePaths = [
-// 	"img_seq/wave-event-size_00035.png",
-// 	"img_seq/wave-event-size_00036.png",
-// 	"img_seq/wave-event-size_00037.png",
-// 	"img_seq/wave-event-size_00038.png",
-// 	"img_seq/wave-event-size_00039.png",
-// 	"img_seq/wave-event-size_00040.png",
-// 	"img_seq/wave-event-size_00041.png"
-// ];
-//
-//
-// $(document).ready(function(){
-//    for(var i=0; i<imagePaths.length; i++) {
-//       var newImg = $('<img style="display:none;" />'); //Add any class or attribute you want or anything for images.
-//       newImg.bind("load", function(){
-//          $(this).show();
-//       });
-//       newImg.attr("src", imagePaths[i]);
-//       $(parentSelector).append(newImg);
-//    }
-// });
-
 		var img_counter = 1;
 		var img_max_counter = 89;
 
@@ -46,7 +24,7 @@
 			else {
 				img_counter--;
 
-				if(img_counter == 0)
+				if(img_counter == 1)
 				{
 					direction = 0
 				}
@@ -64,7 +42,7 @@
 			$(".myImageHolder").attr('src', nextImage);
 
 			console.log(counter_string);
-		}, 42);
+		}, 100);
 
 
 
