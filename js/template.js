@@ -59,7 +59,7 @@
 				counter_string = "0"+counter_string;
 			}
 
-			var nextImage =	"img_seq/sphere-wave_000"+counter_string+".png"
+			// var nextImage =	"img_seq/sphere-wave_000"+counter_string+".png"
 
 			$(".myImageHolder").attr('src', nextImage);
 
