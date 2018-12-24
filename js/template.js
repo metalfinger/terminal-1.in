@@ -80,7 +80,7 @@
 					time: 800,
 					easing: "easeInOutQuint",
 					direction: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5]],
-					ascensorFloorName:["home", "line-up", "faqs", "coc", "contact"]
+					ascensorFloorName:["home", "about-us", "line-up", "faqs", "coc", "contact"]
 				});
 				var floorAdded = false;
 
