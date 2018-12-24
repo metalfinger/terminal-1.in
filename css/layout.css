@@ -849,6 +849,7 @@ div.cs-skin-slide::before {
 }
 .content-section h5{
 	padding-bottom:15px;
+  padding-top:15px;
 }
 .content-section .line-text{
 	position:relative;
@@ -1355,7 +1356,7 @@ div.cs-skin-slide::before {
 	margin:0 auto;
 	overflow:hidden;
 	z-index:2;
-	background:#fff;
+	background:#005aff4d;
 	padding:30px;
 	min-height:150px;
 	border-bottom:3px solid transparent;
@@ -1392,8 +1393,11 @@ div.cs-skin-slide::before {
 .what-we-do-wrap h6{
 	text-align:center;
 	margin-bottom:20px;
+  margin-top:20px;
+  color: red;
 }
 .what-we-do-wrap p{
+  color: #ffffff;
 	text-align:center;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
