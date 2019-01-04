@@ -287,6 +287,9 @@ h6 { font-size: 16px; line-height: 16px;text-transform:uppercase;font-weight: 70
 	.partnerParent{
 		height: 200px;
 		position: relative;
+		margin-top: 10px;
+	}
+
 	}
 
 	.partnerChild{
