@@ -79,8 +79,8 @@
 					loop: true,
 					time: 800,
 					easing: "easeInOutQuint",
-					direction: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5]],
-					ascensorFloorName:["home", "about-us", "line-up", "faqs", "coc", "contact"]
+					direction: [[0,0],[0,1],[0,2],[0,3],[0,4],[0,5],[0,6],[0,7]],
+					ascensorFloorName:["home", "about-us", "line-up", "faqs", "coc", "partners", "contact"]
 				});
 				var floorAdded = false;
 
