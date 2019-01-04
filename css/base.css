@@ -285,7 +285,6 @@ h6 { font-size: 16px; line-height: 16px;text-transform:uppercase;font-weight: 70
 
 
 	.partnerParent{
-		width: 375px;
 		height: 300px;
 		position: relative;
 	}
@@ -298,7 +297,7 @@ h6 { font-size: 16px; line-height: 16px;text-transform:uppercase;font-weight: 70
 	  -ms-transform: translate(-50%, -50%);
 	  transform: translate(-50%, -50%);
 	}
-	
+
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
 	em { font-style: italic; }
