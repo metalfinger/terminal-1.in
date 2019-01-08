@@ -3875,7 +3875,7 @@ audio{
 	height:100%;
 	background-size:cover;
 	background-position:center center;
-	background-image:url('../images/google.jpg');
+  background-image:url('../images/google.jpg');
 	background-repeat:no-repeat;
 	z-index:-2;
 }
@@ -3986,7 +3986,8 @@ audio{
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position:top center;
-	background-image:url('../images/footer.jpg');
+  background-color: #005aff4d;
+	/* background-image:url('../images/footer.jpg'); */
 }
 .footer-wrap img{
 	margin:0 auto;
