@@ -4,72 +4,7 @@
 
 		$(window).load(function() {
 				console.log("LOADED");
-
-
-
-
-
-
 		})
-
-
-
-
-
-
-		// var img_counter = 1;
-		// var img_max_counter = 89;
-		//
-		// var direction = 0; // 0 is upwords and 1 is downwords
-		//
-		// var myAnim = setInterval(function(){
-		//
-		// 	var x = document.getElementById("myImg").complete;
-		// 	console.log(x);
-		// 	if (x) {
-		//
-		// 				if(direction == 0)
-		// 				{
-		// 					img_counter++;
-		//
-		// 					if(img_counter == img_max_counter)
-		// 					{
-		// 						direction = 1
-		// 					}
-		// 				}
-		// 				else {
-		// 					img_counter--;
-		//
-		// 					if(img_counter == 1)
-		// 					{
-		// 						direction = 0
-		// 					}
-		// 				}
-		//
-		// 				var counter_string = String(img_counter);
-		//
-		// 				if(img_counter < 10)
-		// 				{
-		// 					counter_string = "0"+counter_string;
-		// 				}
-		//
-		// 				var nextImage =	"img_seq/sphere-wave_000"+counter_string+".png";//?" + (new Date).getTime();
-		//
-		// 				$(".myImageHolder").attr('src', nextImage);
-		// 	}
-		//
-		// 	// $('img.myImageHolder').on('load',function(){
-		// 	// 	 console.log("ASdfasdfasdfa");
-		// 	// });
-		//
-		// 	// console.log(nextImage);
-		// }, 25);
-
-
-
-
-
-
 
 	//Page transitions
 
@@ -84,57 +19,21 @@
 				});
 				var floorAdded = false;
 
-				// $(".cs-select li").click(function(event, index) {
-				// 	ascensor.trigger("scrollToStage", $(this).index());
-				// });
-
-
-
 				$(".nav-title").click(function(event) {
 
 					ascensor.trigger("scrollToStage", 0);
-					console.log(0);
-					 console.log("sdf");
-
 
 					var cb = $('#nav-check');
-
 					cb.prop('checked', false);
-
-					// console.log(cb.prop('checked') + "sdf");
-					//
-					// console.log("sdf");
-
-
-					// console.log(input.prop('checked'));
-				  // if(input.prop('checked')){
-				  //   input.prop('checked',false);
-				  // }else{
-				  //   input.prop('checked',true);
-				  // }
 				});
 
 				$(".nav-links a").click(function(event, index) {
 					ascensor.trigger("scrollToStage", $(this).index()-1);
-					console.log($(this).index()-1);
-					// console.log("sdf");
 
+					// console.log($(this).index()-1);
 
 					var cb = $('#nav-check');
-
 					cb.prop('checked', false);
-
-					// console.log(cb.prop('checked') + "sdf");
-					//
-					// console.log("sdf");
-
-
-					// console.log(input.prop('checked'));
-				  // if(input.prop('checked')){
-				  //   input.prop('checked',false);
-				  // }else{
-				  //   input.prop('checked',true);
-				  // }
 				});
 
 				$(".logo").click(function(event, index) {
@@ -142,31 +41,19 @@
 
 					$(".cs-select li").removeClass("selected");
 					$(".cs-select li").removeClass("cs-selected");
-
-					// $(".cs-select li").first().addClass("cs-selected");
-					$(".cs-placeholder").html("Home")
-
 					$(".cs-select li").first().addClass("selected");
 					$(".cs-select li").first().addClass("cs-selected");
 
 				});
 
 				$(".cs-select li:eq("+ ascensor.data("current-floor") +")").addClass("selected");
-
 				ascensor.on("scrollStart", function(event, floor){
-
-
-
 					var newfloor = floor.to+1
 
-					console.log(floor.to+"asdf");
+					// console.log(floor.to+"asdf");
 
 					$(".nav-links a").removeClass("nav-selected");
 					$(".nav-links a:eq("+newfloor+")").addClass("nav-selected");
-
-					// $(".cs-select li").removeClass("selected");
-					// $(".cs-select li:eq("+floor.to+")").addClass("selected");
-
 				});
 
 				$(".up").click(function() {
@@ -199,10 +86,6 @@
 			// console.log("sdf")
 			});
 		});
-
-
-
-
 
 	//Menu select
 
